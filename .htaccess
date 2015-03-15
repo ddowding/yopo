@@ -1,0 +1,8 @@
+
+#Rewrite rule to remove .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#Rewrite rule to remove .html
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

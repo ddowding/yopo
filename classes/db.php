@@ -1,6 +1,9 @@
 <?php
 
-class MyPDO extends PDO {
+/**
+ * Class dbPDO to parese ini file with database connections securely into the PDO class
+ */
+class dbPDO extends PDO {
 
     private $engine;
     private $host;

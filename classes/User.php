@@ -6,12 +6,19 @@
  * Time: 09:11
  */
 
+/**
+ * Class User For user logins in the database
+ */
 class User {
     private $id;
     private $username;
     private $email;
 
-
+    /**
+     * @param $id
+     * @param $username
+     * @param $email
+     */
     public function __construct($id,$username,$email) {
         $this->id = $id;
         $this->username = $username;

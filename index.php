@@ -9,7 +9,8 @@
     $settingsFile = "settings.ini.php";
     require_once("resources/includes/header.php");
 
-    $db = new MyPDO($settingsFile);
+    $db = new dbPDO($settingsFile);
+    echo 'sick bra';
 ?>
 <div id="container">
     <div id="content">
@@ -18,4 +19,5 @@
 </div>
 <?php
 require_once( "resources/includes/footer.php");
+require_once( "resources/includes/javascriptFiles.php");
 ?>

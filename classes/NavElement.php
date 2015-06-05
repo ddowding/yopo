@@ -6,6 +6,9 @@
  * Time: 22:33
  */
 
+/**
+ * Class NavElement Returns the nav element within a list
+ */
 class NavElement {
     private $id;
     private $name;
@@ -13,16 +16,33 @@ class NavElement {
     private $jumpId;
     private $elementString;
 
+    /**
+     * @param $id nav id
+     * @param $name The name of the id
+     * @param $href link for the a tag
+     * @param $jumpId if it's a 1 page will jump to that part
+     */
     public function __construct($id,$name,$href,$jumpId) {
         $this->id = $id;
         $this->name = $name;
         $this->href = $href;
         $this->jumpId = $jumpId;
-
-        $this->elementString = $this->generateElementString();
+        $this->elementString = "";
     }
 
+    /**
+     * sets the element string
+     */
     private function generateElementString() {
-        $string = '<li><a></a></li>';
+
+    }
+
+    /**
+     * @return mixed returns the element string
+     */
+    public function getElementString() {
+        $string = '<li><a href="'.$this->jumpId.'">'.$this->name.'</a></li>';
+        $this->elementString = $string;
+        return $this->elementString;
     }
 }

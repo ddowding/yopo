@@ -10,7 +10,6 @@
     require_once("resources/includes/header.php");
 
     $db = new dbPDO($settingsFile);
-    echo 'sick bra';
 ?>
 <div id="container">
     <div id="content">

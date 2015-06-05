@@ -20,33 +20,16 @@ echo '
 	      <a href="../" class="navbar-brand">Promo</a>
 	    </div>
 	    <!-- Start Navigation -->
-	    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-	      <ul class="nav navbar-nav">
-	        <li>
-	          <a href="#hero">Home</a>
-	        </li>
-	        <li>
-	          <a href="#features">Features</a>
-	        </li>
-	        <li>
-	          <a href="#image">About</a>
-	        </li>
-	        <li>
-	          <a href="#gallery">Gallery</a>
-	        </li>
-	        <li>
-	          <a href="#faq">FAQ</a>
-	        </li>
-	        <li>
-	          <a href="#slider">Testimonials</a>
-	        </li>
-	        <li>
-	          <a href="#newsletter">Subscribe</a>
-	        </li>
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right header-button">
-	        <li>
-	          <button type="button" class="btn btn-primary">Purchase Now</button>
+	    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">';
+
+        $nav = new Navigation(false);
+        $navString = $nav->getNavString();
+        echo $navString;
+        if ($navString) {
+            echo '<ul class="nav navbar-nav navbar-right header-button">';
+        }
+	   echo '     <li>
+	          <button type="button" class="btn btn-primary">Get the do da</button>
 	        </li>
 	      </ul>
 	    </nav>

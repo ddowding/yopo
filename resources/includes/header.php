@@ -22,15 +22,15 @@ echo '
 		</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="assests/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 		<!-- Rocket extras -->
-		<link href="assests/css/animate.css" rel="stylesheet">
-		<link href="assests/css/prettyPhoto.css" rel="stylesheet">
-		<link href="assests/css/style.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -46,3 +46,5 @@ echo '
 <div id="parallax"></div>';
 
 include_once("navigation.php");
+?>
+

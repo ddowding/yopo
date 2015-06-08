@@ -10,13 +10,17 @@
     require_once("resources/includes/header.php");
 
     $db = new dbPDO($settingsFile);
+    require_once("resources/scripts/promoPage.php");
+    require_once("resources/scripts/landingPage.php");
+    require_once("resources/scripts/imageBlock.php");
+    require_once("resources/scripts/galleryBlock.php");
+    require_once("resources/scripts/textBlock.php");
+    require_once("resources/scripts/sliderBlock.php");
+ //   require_once("resources/scripts/newsletterBlock");
 ?>
-<div id="container">
-    <div id="content">
-        <!-- content -->
-    </div>
-</div>
 <?php
 require_once( "resources/includes/footer.php");
 require_once( "resources/includes/javascriptFiles.php");
 ?>
+</body>
+</html>
